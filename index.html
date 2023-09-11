@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빅마마의 밥친구</title>
+    <meta name="keywords" content="빅마마의 밥친구">
+    <meta name="description" content="빅마마의 밥친구와 함께해요!">
+    <!-- 파비콘 -->
+<!--     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="" type="image/x-icon"> -->
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!-- 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo_01.png" alt="빅마마의 밥친구"></a></h1>
+        <div class="right">
+            <nav>
+                <a href="#">왜</a>
+                <a href="#">메뉴소개</a>
+                <a href="#">프로세스</a>
+                <a href="#">자주 묻는 질문</a>
+            </nav>
+            <div class="lnb">
+                <a href="#" class="header_btn"><img src="./images/icon_order.png" alt=""><span>주문하기</span></a>
+                <a href="#" class="header_btn"><img src="./images/icon_contact_support.png" alt=""><span>문의하기</span></a>
+            </div>
+        </div>
+        
+        <a class="mobile_btn"><span></span><span></span></a>
+        <div class="mobile_nav">
+            <a href="#">왜</a>
+            <a href="#">메뉴소개</a>
+            <a href="#">프로세스</a>
+            <a href="#">자주 묻는 질문</a>
+            <a href="#"><img src="./images/icon_order.png" alt=""><span>주문하기</span></a>
+            <a href="#"><img src="./images/icon_contact_support.png" alt=""><span>문의하기</span></a>
+        </div>
+    </header>
+    <main>
+        <section id="main_top">
+            <div class="main_title">
+                <h1>
+                    <span>맛있고 건강하게!</span>
+                    <em>빅마마의 밥친구</em>
+                    <em>와 함께해요!</em>
+                </h1>
+                <div class="deco">
+                    <img src="./images/title_deco01.png" alt="">
+                    <img src="./images/title_deco02.png" alt="">
+                    <img src="./images/title_deco03.png" alt="">
+                </div>
+            </div>
+            <div class="chef"><!-- bg --></div>
+            <div class="swiper" id="main_top_slide">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./images/food01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food02.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food04.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food06.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food07.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food08.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food09.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/food10.png" alt=""></div>
+                    <!-- <div class="swiper-slide"><img src="./images/food11.png" alt=""></div> -->
+                </div>
+            </div>
+        </section>
+        <section id="why">
+            <div class="title">
+                <p class="title_icon"><img src="./images/icon_section01.png" alt=""></p>
+                <h2>왜 빅마마의 밥친구?</h2>
+            </div>
+            <div class="wrap">
+                <div class="contents_wrap">
+                    <div class="contents contents1">
+                        <p class="photo"><!-- bg --></p>
+                        <h3>엄마의 마음으로 건강한 영양설계</h3>
+                        <p class="info">
+                            빅마마의 밥친구는  맛있고 영양 가득한 재료를 선발하여,  내 가족과 같은 마음으로 
+                            고객의  건강을 최우선으로 생각합니다.
+                        </p>
+                    </div>
+                    <div class="contents contents2">
+                        <p class="photo"><!-- bg --></p>
+                        <h3>우리 전통 반찬으로 든든한 식사</h3>
+                        <p class="info">
+                            한국의 역사와 문화가 담긴 다양한 반찬을 제공하여, 간편하면서도 정성스러운 식사를 가능하게 합니다.
+                        </p>
+                    </div>
+                    <div class="contents contents3">
+                        <p class="photo"><!-- bg --></p>
+                        <h3>신선함을 지속하는 일일배송</h3>
+                        <p class="info">
+                            우리는 매일 신선한 반찬을 직접 만들고, 그날 그날 신선하게 포장하여 배송합니다.  최상의 품질을 제공하고, 신선한 맛과 영양을 보장합니다. 
+                        </p>
+                    </div>
+                </div><!-- contents_wrap end -->
+            </div><!-- wrap end -->
+        </section>
+        <section id="menu"><!-- bg -->
+            <div class="title">
+                <p class="title_icon"><img src="./images/icon_section02.png" alt=""></p>
+                <h2>믿고 먹는 건강한 식단</h2>
+            </div>
+            <div class="wrap">
+                <div class="select_option">
+                    <select name="diet" id="diet_select">
+                        <option value="diet00">전체식단</option>
+                        <option value="diet01">일반식단</option>
+                        <option value="diet02">보양식</option>
+                        <option value="diet03">저염식</option>
+                        <option value="diet04">비건식단</option>
+                        <option value="diet05">유아식</option>
+                    </select>
+                    <select name="dish_type" id="dish_type">
+                        <option value="dish00">전체</option>
+                        <option value="dish01">밑반찬</option>
+                        <option value="dish02">메인반찬</option>
+                        <option value="dish03">국</option>
+                        <option value="dish04">김치</option>
+                        <option value="dish05">일품요리</option>
+                        <option value="dish06">디저트</option>
+                    </select>
+                </div>
+                <div class="swiper" id="menu_slide">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide1">
+                            <div class="food_img"><img src="./images/menu01.jpg" alt=""></div>
+                            <h3>부추계란볶음</h3>
+                        </div><!-- slide1 end -->
+                        <div class="swiper-slide slide2">
+                            <div class="food_img"><img src="./images/menu02.jpg" alt=""></div>
+                            <h3>파프리카전</h3>
+                        </div><!-- slide2 end -->
+                        <div class="swiper-slide slide3">
+                            <div class="food_img"><img src="./images/menu03.jpg" alt=""></div>
+                            <h3>깨소스연근무침</h3>
+                        </div><!-- slide3 end -->
+                        <div class="swiper-slide slide4">
+                            <div class="food_img"><img src="./images/menu04.jpg" alt=""></div>
+                            <h3>미역줄기붂음</h3>
+                        </div><!-- slide4 end -->
+                        <div class="swiper-slide slide5">
+                            <div class="food_img"><img src="./images/menu05.jpg" alt=""></div>
+                            <h3>닭가슴살피망볶음</h3>
+                        </div><!-- slide5 end -->
+                        <div class="swiper-slide slide6">
+                            <div class="food_img"><img src="./images/menu06.jpg" alt=""></div>
+                            <h3>떡갈비</h3>
+                        </div><!-- slide6 end -->
+                        <div class="swiper-slide slide7">
+                            <div class="food_img"><img src="./images/menu07.jpg" alt=""></div>
+                            <h3>알배추돼지고기볶음</h3>
+                        </div><!-- slide7 end -->
+                        <div class="swiper-slide slide8">
+                            <div class="food_img"><img src="./images/menu08.jpg" alt=""></div>
+                            <h3>소고기피망볶음</h3>
+                        </div><!-- slide8 end -->
+                    </div>
+                </div><!-- swiper end -->
+                <a href="#" class="view_btn"><span>반찬 보러가기</span><img src="./images/view_more.png" alt=""></a>
+            </div><!-- wrap end -->
+        </section>
+        <section id="process">
+            <div class="title">
+                <p class="title_icon"><img src="./images/icon_section03.png" alt=""></p>
+                <h2>믿을 수 있는 프로세스</h2>
+            </div>
+            <p class="desc">빅마마의 보물들, 100여개의 항아리 속에 고이고이 담은 발효액과 매일 전국에서 공수해오는 신선한 재료들로 주문 즉시 조리하여 보내드립니다. 빅마마의 밥친구는 언제나 건강하고 신선한 반찬을 약속합니다.</p>
+            <div class="contetns_wrap">
+                <div class="top">
+                    <div class="wrap">
+                        <div class="checkpoint">
+                            <ul>
+                                <li><img src="./images/icon_checkpoint.png" alt=""><span>주문 즉시 신선한 재료로 조리</span></li>
+                                <li><img src="./images/icon_checkpoint.png" alt=""><span>조리부터 포장까지 체계적이고 깔끔한 생산관리</span></li>
+                                <li><img src="./images/icon_checkpoint.png" alt=""><span>신선함을 위한 보냉 포장</span></li>
+                            </ul>
+                        </div>
+                        <div class="photo"><!-- bg --></div>
+                    </div>
+                </div><!-- top end -->
+                <div class="btm"><!-- bg-color -->
+                    <div class="process_step">
+                        <p><img src="./images/process01.png" alt=""></p>
+                        <h3>고객주문</h3>
+                    </div>
+                    <p class="arrow"><img src="./images/arrow.png" alt=""></p>
+                    <div class="process_step">
+                        <p><img src="./images/process02.png" alt=""></p>
+                        <h3>안전한 조리</h3>
+                    </div>
+                    <p class="arrow"><img src="./images/arrow.png" alt=""></p>
+                    <div class="process_step">
+                        <p><img src="./images/process03.png" alt=""></p>
+                        <h3>꼼꼼한 보냉포장</h3>
+                    </div>
+                    <p class="arrow"><img src="./images/arrow.png" alt=""></p>
+                    <div class="process_step">
+                        <p><img src="./images/process04.png" alt=""></p>
+                        <h3>정확한 배송</h3>
+                    </div>
+                </div><!-- btm end -->
+            </div><!-- contents_wrap end -->
+        </section>
+        <section id="qna">
+            <div class="title">
+                <p class="title_icon"><img src="./images/icon_section04.png" alt=""></p>
+                <h2>자주 묻는 질문</h2>
+            </div>
+            <div class="wrap">
+                <dl>
+                    <dt>Q 배송은 언제 오나요?</dt>
+                    <dd>주문 즉시 조리하여 보내드리기 때문에 익일 아침이면 받아보실 수 있습니다. (1시 이전 주문건)</dd>
+                </dl>
+                <dl>
+                    <dt>Q 주문은 언제까지 해야 하나요?</dt>
+                    <dd>주문은 배송 오후 1시에 마감됩니다. 빅마마의 밥친구 웹페이지에서 편하게 주문하실 수 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>Q 재료의 원산지는 어떻게 되나요?</dt>
+                    <dd>빅마마의 밥친구는 직접 선별한 국내산 재료들로 조리되고 있습니다.</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="ask">
+            <div class="title">
+                <p class="title_icon"><img src="./images/icon_section05.png" alt=""></p>
+                <h2>무료 상담 신청</h2>
+            </div>
+            <div class="wrap">
+                <form action="#" method="get" id="ask_form">
+                    <fieldset>
+                        <legend class="skip">무료상담신청양식</legend>
+                        <dl id="name_wrap">
+                            <dt>성함 *</dt>
+                            <dd><input type="text" name="name_input" id="name_input"></dd>
+                        </dl>
+                        <dl id="phone_wrap">
+                            <dt>연락처 *</dt>
+                            <dd><input type="text" name="phone_input" id="phone_input"></dd>
+                        </dl>
+                        <dl id="ask_contents">
+                            <dt>문의내용</dt>
+                            <dd><textarea name="ask_text" id="ask_text" cols="30" rows="10"></textarea></dd>
+                        </dl>
+                        <label>
+                            <input type="radio" name="agree" id="agree">
+                            <span>
+                                <em>개인정보 수집 및 이용약관</em>에 동의합니다.
+                            </span>
+                        </label>
+                        <button type="button" id="ask_btn"><span>상담신청</span><img src="./images/ask.png" alt=""></button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="fnb">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">사업자정보확인</a>
+        </div>
+        <address>
+            상호: (주)더참 | 대표: 이혜정 | 개인정보관리책임자: 이혜정 | 전화: 02-540-3250 | 이메일: mamachan0907@naver.com
+            주소: 서울시 강남구 봉은사로331, SH타워 7층 | 사업자등록번호: 596-81-00553 | 통신판매: 제 2016-서울강남-04099호 
+            안전구매(에스크로) 서비스 가맹점
+        </address>
+    </footer>
+    <script src="./script/index.js"></script>
+</body>
+</html>
