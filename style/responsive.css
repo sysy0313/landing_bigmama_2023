@@ -4,6 +4,7 @@ header, main, footer {min-width:320px;}
 }/* 1600 end */
 @media screen and (max-width:1300px){
     /* header */
+    header {height:80px;}
     header h1 {display:none;}
     header .right {display:none;}
     header .mobile_btn {display:flex;}
@@ -59,6 +60,7 @@ header, main, footer {min-width:320px;}
     main #process .contents_wrap .btm .arrow {display:none;}
 }/* 850 end */
 @media screen and (max-width:800px){
+    header {height:60px;}
     /* main_top */
     main #main_top .main_title {width:620px; height:320px;}
     main #main_top .main_title h1 span {font-size:2.5rem; margin-bottom:10px;}
