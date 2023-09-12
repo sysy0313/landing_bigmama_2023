@@ -7,8 +7,8 @@
     <meta name="keywords" content="빅마마의 밥친구">
     <meta name="description" content="빅마마의 밥친구와 함께해요!">
     <!-- 파비콘 -->
-<!--     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="icon" href="" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <!-- style -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/index.css">
@@ -33,14 +33,16 @@
             </div>
         </div>
         
-        <a class="mobile_btn"><span></span><span></span></a>
+        <a href="#" class="mobile_btn"><span></span><span></span></a>
         <div class="mobile_nav">
-            <a href="#">왜</a>
-            <a href="#">메뉴소개</a>
-            <a href="#">프로세스</a>
-            <a href="#">자주 묻는 질문</a>
-            <a href="#"><img src="./images/icon_order.png" alt=""><span>주문하기</span></a>
-            <a href="#"><img src="./images/icon_contact_support.png" alt=""><span>문의하기</span></a>
+            <div class="nav_wrap">
+                <a href="#why">왜</a>
+                <a href="#menu">메뉴소개</a>
+                <a href="#process">프로세스</a>
+                <a href="#qna">자주 묻는 질문</a>
+                <a href="#"><img src="./images/icon_order.png" alt=""><span>주문하기</span></a>
+                <a href="#ask"><img src="./images/icon_contact_support.png" alt=""><span>문의하기</span></a>
+            </div>
         </div>
     </header>
     <main>
@@ -85,7 +87,7 @@
                 <div class="contents_wrap">
                     <div class="contents contents1">
                         <p class="photo"><!-- bg --></p>
-                        <h3>엄마의 마음으로 건강한 영양설계</h3>
+                        <h3><span>엄마의 마음으로 </span><span>건강한 영양설계</span></h3>
                         <p class="info">
                             빅마마의 밥친구는  맛있고 영양 가득한 재료를 선발하여,  내 가족과 같은 마음으로 
                             고객의  건강을 최우선으로 생각합니다.
@@ -93,14 +95,14 @@
                     </div>
                     <div class="contents contents2">
                         <p class="photo"><!-- bg --></p>
-                        <h3>우리 전통 반찬으로 든든한 식사</h3>
+                        <h3><span>우리 전통 반찬으로 </span><span>든든한 식사</span></h3>
                         <p class="info">
                             한국의 역사와 문화가 담긴 다양한 반찬을 제공하여, 간편하면서도 정성스러운 식사를 가능하게 합니다.
                         </p>
                     </div>
                     <div class="contents contents3">
                         <p class="photo"><!-- bg --></p>
-                        <h3>신선함을 지속하는 일일배송</h3>
+                        <h3><span>신선함을 지속하는 </span><span>일일배송</span></h3>
                         <p class="info">
                             우리는 매일 신선한 반찬을 직접 만들고, 그날 그날 신선하게 포장하여 배송합니다.  최상의 품질을 제공하고, 신선한 맛과 영양을 보장합니다. 
                         </p>
@@ -172,7 +174,7 @@
                         </div><!-- slide8 end -->
                     </div>
                 </div><!-- swiper end -->
-                <a href="#" class="view_btn"><span>반찬 보러가기</span><img src="./images/view_more.png" alt=""></a>
+                <a href="#" class="view_btn"><span>반찬 더 보러가기</span><img src="./images/view_more.png" alt=""></a>
             </div>
         </section>
         <section id="process">
@@ -259,7 +261,7 @@
                             <dd><textarea name="ask_text" id="ask_text" cols="30" rows="10"></textarea></dd>
                         </dl>
                         <label>
-                            <input type="radio" name="agree" id="agree">
+                            <input type="checkbox" name="agree" id="agree">
                             <span>
                                 <em>개인정보 수집 및 이용약관</em>에 동의합니다.
                             </span>

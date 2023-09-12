@@ -1,0 +1,194 @@
+header, main, footer {min-width:320px;}
+@media screen and (max-width:1600px){
+    main #main_top #main_top_slide .swiper-wrapper .swiper-slide img {width:250px; height:250px;}
+}/* 1600 end */
+@media screen and (max-width:1300px){
+    /* header */
+    header h1 {display:none;}
+    header .right {display:none;}
+    header .mobile_btn {display:flex;}
+    header .mobile_nav {display:block;}
+    /* 슬라이드 크기 */
+    main #main_top #main_top_slide .swiper-wrapper .swiper-slide img {width:220px; height:220px;}
+}/* 1300 end */
+@media screen and (max-width:1250px){
+    /* 공통 */
+    .wrap {width:calc(100% - 60px)}
+    /* #menu */
+    main #menu .wrap {padding:50px 20px; }
+    /* #process */
+    main #process .desc {width:calc(100% - 60px)}
+    main #process .contents_wrap .btm .process_step p {width:200px; height:200px;}
+}/* 1250 end */
+@media screen and (max-width:1200px){
+    /* process */
+    main #process .contents_wrap .top .wrap .photo {width:50%;}
+    main #process .contents_wrap .top .wrap .checkpoint ul li span {font-size:1.1rem;}
+}/* 1200 end */
+@media screen and (max-width:1150px){
+    main #why .wrap .contents_wrap .contents > * {margin-bottom:20px;}
+    main #why .wrap .contents_wrap .contents {width:calc(33.33% - 60px / 3);}
+    main #why .wrap .contents_wrap .contents h3 span {font-size:1rem;}
+}/* 1150 end */
+@media screen and (max-width:1100px){
+    main #process .contents_wrap .btm .process_step p {width:180px; height:180px;}
+    main #process .contents_wrap .btm .process_step h3 {font-size:1.3rem;}
+}/* 1100 end */
+@media screen and (max-width:1000px){
+    main #process .contents_wrap .btm .process_step p {width:150px; height:150px;}
+    main #process .contents_wrap .btm .process_step h3 {font-size:1.2rem;}
+}/* 1000 end */
+@media screen and (max-width:950px){
+    /* process */
+    main #process .contents_wrap .top .wrap .photo {width:40%;}
+    /* footer */
+    footer address {width:calc(100% - 60px)}
+}/* 950 end */
+@media screen and (max-width:920px){
+    main #why .wrap .contents_wrap .contents {width:calc(33.33% - 40px / 3);}
+    main #why .wrap .contents_wrap .contents h3 span {display:block; margin-bottom:10px;}
+    main #why .wrap .contents_wrap .contents .info {font-size:0.9rem; line-height:35px;}
+}/* 920 end */
+@media screen and (max-width:850px){
+    main #process .contents_wrap .btm {
+        flex-flow:row wrap; padding:50px; 
+    }
+    main #process .contents_wrap .btm .process_step {width:300px;}
+    main #process .contents_wrap .btm .process_step:nth-child(1), main #process .contents_wrap .btm .process_step:nth-child(3) { margin-bottom:30px;}
+    main #process .contents_wrap .btm .process_step p {width:250px; height:250px; margin:0 auto; margin-bottom:20px; }
+    main #process .contents_wrap .btm .arrow {display:none;}
+}/* 850 end */
+@media screen and (max-width:800px){
+    /* main_top */
+    main #main_top .main_title {width:620px; height:320px;}
+    main #main_top .main_title h1 span {font-size:2.5rem; margin-bottom:10px;}
+    main #main_top .main_title h1 em {line-height:80px;}
+    main #main_top .main_title h1 em:nth-of-type(1) {font-size:3rem;}
+    main #main_top .main_title h1 em:nth-of-type(2) {font-size:2.8rem;}
+    main #main_top .main_title .deco img:nth-child(1) {top:40px; left:60px;}
+    main #main_top .main_title .deco img:nth-child(2) {top:10px; right:40px;}
+    main #main_top .main_title .deco img:nth-child(3) {left:0; bottom:-10px;}
+    main #main_top .chef {left:50%;}
+    /* #why */
+    main #why .wrap .contents_wrap {flex-flow:column nowrap;}
+    main #why .wrap .contents_wrap .contents {width:100%; margin:0 auto; margin-bottom:30px;}
+    main #why .wrap .contents_wrap .contents:last-child {margin-bottom:0;}
+    main #why .wrap .contents_wrap .contents h3 span {font-size:1.25rem; display:inline; margin-bottom:10px;}
+    /* menu */
+    main #menu .wrap .select_option #diet_select {margin-right:50px}
+    main #menu .wrap .select_option #dish_type {margin-right:50px;}
+    /* process */
+    main #process .contents_wrap .top .wrap {flex-flow:column nowrap;}
+    main #process .contents_wrap .top .wrap .photo {order:-1; width:100%; margin-bottom:50px;}
+    main #process .contents_wrap .top .wrap .checkpoint {order:1;}
+    main #process .contents_wrap .top .wrap .checkpoint ul li span {font-size:1.25rem;}
+}/* 800 end */
+@media screen and (max-width:720px){
+    main #process .contents_wrap .btm {padding:50px 0; }
+    main #process .contents_wrap .btm .process_step {width:250px;}
+    main #process .contents_wrap .btm .process_step p {width:200px; height:200px; margin-bottom:20px; }
+}/* 720 end */
+@media screen and (max-width:700px){
+    main #ask .wrap #ask_form {
+        width:100%; margin:0 auto;
+    }
+}
+@media screen and (max-width:650px){
+    .wrap {width:calc(100% - 30px)}
+    /* #process */
+    main #process .desc {width:calc(100% - 30px)}
+    /* main_top */
+    main #main_top .main_title {width:400px; height:200px;}
+    main #main_top .main_title h1 span {font-size:1.8rem; margin-bottom:10px;}
+    main #main_top .main_title h1 em {line-height:60px;}
+    main #main_top .main_title h1 em:nth-of-type(1) {font-size:2.3rem;}
+    main #main_top .main_title h1 em:nth-of-type(2) {font-size:2rem;}
+    main #main_top .main_title .deco img:nth-child(1) {top:10px; left:30px; width:50px;}
+    main #main_top .main_title .deco img:nth-child(2) {top:5px; right:40px; width:60px;}
+    main #main_top .main_title .deco img:nth-child(3) {left:7px; bottom:0px; width:60px;}
+    main #main_top .chef {left:47%; width:300px; height:60vh;}
+    /* footer */
+    footer address {width:calc(100% - 30px)}
+}/* 650 end */
+@media screen and (max-width:625px){
+    main section .title h2 {font-size:2rem;}
+    /* menu */
+    main #menu .wrap .select_option #diet_select {margin-right:30px; font-size:1rem;}
+    main #menu .wrap .select_option #diet_select option {font-size:1rem;}
+    main #menu .wrap .select_option #dish_type {margin-right:30px; font-size:1rem;}
+    main #menu .wrap .select_option #dish_type option {font-size:1rem;}
+    main #menu .wrap .select_option span {font-size:1rem; letter-spacing:-0.04em;}
+    main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide .food_img {margin-bottom:15px;}
+    main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide h3 {font-size:1rem;}
+    main #menu .wrap .view_btn {width:280px; height:50px;}
+    main #menu .wrap .view_btn span {font-size:1.3rem;}
+    /* process */
+    main #process .desc {font-size:1rem; line-height:38px;}
+    main #process .contents_wrap .top .wrap .checkpoint ul li span {font-size:1rem;}
+    /* qna */
+    main #qna .wrap dl dt {font-size:1rem; margin-bottom:15px;}
+    main #qna .wrap dl dd {font-size:1rem;}
+    /* ask */
+    main #ask .wrap #ask_form fieldset #ask_btn {height:50px;}
+    main #ask .wrap #ask_form fieldset #ask_btn span {font-size:1.3rem;}
+}/* 625 end */
+@media screen and (max-width:520px){
+    /* process */
+    main #process .contents_wrap .btm .process_step {width:200px;}
+    main #process .contents_wrap .btm .process_step p {width:180px; height:180px; }
+}
+@media screen and (max-width:500px){
+    main #main_top .main_title {display:none;}
+    main #main_top .chef {
+        background:url(../images/mobile.png) no-repeat bottom; 
+        left:50%; transform:translateX(-50%); 
+        background-size:contain;
+        width:100%; height:90vh;
+    }
+}/* 650 end */
+@media screen and (max-width:520px){
+    footer .fnb a {font-size:0.8rem; margin-right:20px;}
+    footer address {font-size:0.8rem; }
+}/* 520 end */ 
+@media screen and (max-width:490px){
+    main #menu .wrap .select_option #diet_select {margin-bottom:20px;}
+    main #menu .wrap .select_option #dish_type {margin-bottom:20px; margin-right:0;}
+    main #menu .wrap .select_option span {display:block;}
+}/* 490 end */
+@media screen and (max-width:450px){
+    /* 메뉴제목크기 */
+    main #menu .title h2 {font-size:1.7rem;}
+}/* 450 end */
+@media screen and (max-width:420px){
+    /* process */
+    main #process .contents_wrap .btm .process_step {width:150px;}
+    main #process .contents_wrap .btm .process_step p {width:145px; height:145px;}
+    main #process .contents_wrap .btm .process_step h3 {font-size:1rem;}
+    /* ask */
+    main #ask .wrap #ask_form fieldset label span {font-size:0.9rem;}
+    main #ask .wrap #ask_form fieldset label span em {font-size:0.9rem;}
+}/* 420 end */
+@media screen and (max-width:400px){
+    /* 공통제목크기 */
+    main section .title h2 {font-size:1.6rem;}
+    /* #why */
+    main #why .wrap .contents_wrap .contents h3 span {font-size:1rem;}
+    /* #menu */
+    main #menu .wrap {
+        border-radius:30px;
+    }
+    /* process */
+    main #process .contents_wrap .top .wrap .photo {height:200px;}
+    /* footer */
+    footer .fnb a {margin-right:0; letter-spacing:-0.04em;}
+}
+@media screen and (max-width:390px){
+    /* 메뉴제목크기 */
+    main #menu .title h2 {font-size:1.4rem;}
+    main #menu .wrap .view_btn {width:250px; height:50px;}
+    main #menu .wrap .view_btn span {font-size:1.2rem;}
+}/* 390 end */
+@media screen and (max-width:360px){
+    main #ask .wrap #ask_form fieldset label span {font-size:0.8rem;}
+    main #ask .wrap #ask_form fieldset label span em {font-size:0.8rem;}
+}

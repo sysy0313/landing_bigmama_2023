@@ -39,27 +39,62 @@ header .right .lnb .header_btn span {
     font-size:1.25rem; color:#fff;
 }
 /* 모바일 */
-header .mobile_btn {display:none;}
-header .mobile_btn span  {}
+header .mobile_btn {
+    display:none; flex-flow:column nowrap; width:52px; height:21px; justify-content:space-between;
+    position:relative; z-index:50;
+}
+header .mobile_btn:hover span {background:#CCDA45;}
+header .mobile_btn span  {
+    display:block; width:52px; height:7px; background:#FD9800;
+    transition:all 0.3s linear;
+}
+header .mobile_btn.active span {background:#fff;}
+header .mobile_btn.active span:nth-child(1) {transform:translateY(100%) rotate(45deg)}
+header .mobile_btn.active span:nth-child(2) {transform:translateY(-100%) rotate(-45deg)}
 header .mobile_btn span:nth-child(1) {}
 header .mobile_btn span:nth-child(2) {}
-header .mobile_nav {display:none;}
-header .mobile_nav a {}
-header .mobile_nav a img {}
-header .mobile_nav a span {}
+header .mobile_nav {
+    display:none;
+    position:fixed;
+    top:0; left:0; 
+    background:#CCDA45;
+    width:100%; height:50vh;
+    padding:20px 0;
+    transform:translateY(-101%);
+    transition:all 0.5s linear;
+}
+header .mobile_nav.active {transform:translateY(0)}
+header .mobile_nav .nav_wrap {
+    width:100%; height:100%;
+    display:flex; flex-flow:column nowrap; justify-content:flex-end; align-items:center;
+}
+header .mobile_nav .nav_wrap a {
+    display:flex; align-items:center; 
+    font-size:1.5rem; color:#fff;
+    padding:10px; margin-bottom:10px; border-radius:30px;
+    transition:all 0.3s linear;
+}
+header .mobile_nav .nav_wrap a:hover {
+    background:#687C37;
+}
+header .mobile_nav .nav_wrap a img {}
+header .mobile_nav .nav_wrap a span {
+    font-size:1.5rem;
+}
 /* main */
 main {}
 /* section-1 */
 main #main_top {
     height:100vh;
     background-image:url(../images/main.jpg);
-    background-size:cover; background-repeat:no-repeat;
+    background-size:contain; background-repeat:no-repeat;
+    background-position:bottom; background-size:cover;
     position:relative;
     display:flex; justify-content:center; 
 }
 main #main_top .main_title {
     background-image:url(../images/title_bg.png);
-    background-repeat:no-repeat; background-size:cover;
+    background-repeat:no-repeat; background-size:contain;
     width:754px; height:390px; margin-top:50px;
     display:flex;align-items:center; justify-content:center;
     position:relative;
@@ -76,12 +111,8 @@ main #main_top .main_title h1 span {
 main #main_top .main_title h1 em {
     font-family:'dohyeon'; color:#fff; letter-spacing:-0.06em; line-height:100px;
 }
-main #main_top .main_title h1 em:nth-last-of-type(1) {
-    font-size:3.950rem;
-}
-main #main_top .main_title h1 em:nth-last-of-type(2) {
-    font-size:3.5rem;
-}
+main #main_top .main_title h1 em:nth-of-type(1) {font-size:3.950rem;}
+main #main_top .main_title h1 em:nth-of-type(2) {font-size:3.5rem;}
 main #main_top .main_title .deco {}
 main #main_top .main_title .deco img {position:absolute;}
 main #main_top .main_title .deco img:nth-child(1) {top:50px; left:80px; animation:rotate 0.6s linear alternate infinite;}
@@ -91,7 +122,8 @@ main #main_top .chef {
     position:absolute; bottom:0; left:57%;
     z-index:100;
     width:350px; height:650px;
-    background-image:url(../images/chef.png); background-repeat:no-repeat; background-size:cover;
+    background-image:url(../images/chef.png); background-repeat:no-repeat; background-size:contain;
+    background-position:bottom;
 }
 /* 슬라이드 */
 main #main_top #main_top_slide {
@@ -102,7 +134,8 @@ main #main_top #main_top_slide .swiper-wrapper .swiper-slide {text-align:center;
 main #main_top #main_top_slide .swiper-wrapper .swiper-slide img {width:300px; height:300px;}
 /* 제목공통 */
 main section {padding:100px 0;}
-main section .title {text-align:center; }
+main section .title {text-align:center; opacity:0; }
+main section .title.active {animation:title_ani 1s linear forwards;}
 main section .title .title_icon {width:50px; height:50px; margin:0 auto; margin-bottom:25px;}
 main section .title .title_icon img {width:100%;}
 main section .title h2 {
@@ -117,15 +150,21 @@ main #why .wrap .contents_wrap {
     display:flex; justify-content:space-between;
 }
 main #why .wrap .contents_wrap .contents {
-    width:calc(33.33% - 80px / 3);
+    width:calc(33.33% - 80px / 3); opacity:0;
 }
+main #why .wrap .contents_wrap .contents1.active {animation:title_ani 1.2s linear forwards;}
+main #why .wrap .contents_wrap .contents2.active {animation:title_ani 1.2s linear 0.5s forwards;}
+main #why .wrap .contents_wrap .contents3.active {animation:title_ani 1.2s linear 1s forwards;}
 main #why .wrap .contents_wrap .contents > * {margin-bottom:25px; text-align:center;}
 main #why .wrap .contents_wrap .contents > *:last-child {margin-bottom:0;}
-main #why .wrap .contents_wrap .contents .photo {width:100%; height:200px; background-size:cover; background-repeat:no-repeat;}
+main #why .wrap .contents_wrap .contents .photo {
+    width:100%; height:200px; background-size:cover; background-repeat:no-repeat;
+    background-position:center;
+}
 main #why .wrap .contents_wrap .contents1 .photo {background-image:url(../images/section01_01.jpg)}
 main #why .wrap .contents_wrap .contents2 .photo {background-image:url(../images/section01_02.jpg)}
 main #why .wrap .contents_wrap .contents3 .photo {background-image:url(../images/section01_03.jpg)}
-main #why .wrap .contents_wrap .contents h3 {
+main #why .wrap .contents_wrap .contents h3 span {
     font-family:'dohyeon'; font-size:1.25rem; letter-spacing:-0.06em; color:#FD9800;
 }
 main #why .wrap .contents_wrap .contents .info {
@@ -158,16 +197,16 @@ main #menu .wrap .select_option #dish_type {
 main #menu .wrap .select_option #dish_type option {
     font-size:1.25rem; letter-spacing:-0.02em;
 }
-main #menu .wrap .select_option span {font-size:1.25rem; letter-spacing:-0.02em; }
+main #menu .wrap .select_option span {font-size:1.25rem; letter-spacing:-0.02em;}
 /* 슬라이드 */
 main #menu .wrap #menu_slide {}
 main #menu .wrap #menu_slide .swiper-wrapper {transition-timing-function: linear}
 main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide {text-align:center;}
 main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide .food_img {
-    width:250px; height:250px; border-radius:20px; overflow:hidden; margin:0 auto;
+    border-radius:20px; overflow:hidden; margin:0 auto;
     margin-bottom:20px;
-    
 }
+
 main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide .food_img img {width:100%;}
 main #menu .wrap #menu_slide .swiper-wrapper .swiper-slide h3 {
     font-size:1.25rem; letter-spacing:-0.02em; 
@@ -206,10 +245,14 @@ main #process .contents_wrap .top .wrap .checkpoint {}
 main #process .contents_wrap .top .wrap .checkpoint ul {}
 main #process .contents_wrap .top .wrap .checkpoint ul li {
     margin-bottom:30px; display:flex; align-items:center;
+    opacity:0;
 }
+main #process .contents_wrap .top .wrap .checkpoint ul li:nth-child(1).active {animation:contents_ani2 0.5s linear forwards;}
+main #process .contents_wrap .top .wrap .checkpoint ul li:nth-child(2).active {animation:contents_ani2 0.5s linear 0.5s forwards;}
+main #process .contents_wrap .top .wrap .checkpoint ul li:nth-child(3).active {animation:contents_ani2 0.5s linear 1s forwards;}
 main #process .contents_wrap .top .wrap .checkpoint ul li img {margin-right:15px;}
 main #process .contents_wrap .top .wrap .checkpoint ul li span {
-    font-size:1.25rem; letter-spacing:-0.06em; 
+    font-size:1.25rem; letter-spacing:-0.06em; line-height:30px;
 }
 main #process .contents_wrap .top .wrap .photo {
     background:url(../images/section03_img.jpg) no-repeat;
@@ -223,10 +266,14 @@ main #process .contents_wrap .btm {
 main #process .contents_wrap .btm > * {margin-right:25px;}
 main #process .contents_wrap .btm > *:last-child {margin-right:0;}
 main #process .contents_wrap .btm .process_step {
-    text-align:center;
+    text-align:center; opacity:0; margin:0 auto;
 }
-main #process .contents_wrap .btm .process_step p {}
-main #process .contents_wrap .btm .process_step p img {margin-bottom:20px;}
+main #process .contents_wrap .btm .process_step:nth-child(1) {animation:contents_ani 1.5s 1s linear forwards;}
+main #process .contents_wrap .btm .process_step:nth-child(3) {animation:contents_ani 1.5s linear 1s forwards;}
+main #process .contents_wrap .btm .process_step:nth-child(5) {animation:contents_ani 1.5s linear 2s forwards;}
+main #process .contents_wrap .btm .process_step:nth-child(7) {animation:contents_ani 1.5s linear 3s forwards;}
+main #process .contents_wrap .btm .process_step p {width:250px; height:250px; margin-bottom:20px;}
+main #process .contents_wrap .btm .process_step p img {width:100%;}
 main #process .contents_wrap .btm .process_step h3 {
     font-size:1.563rem; letter-spacing:-0.02em; font-family:'gothic_bold'; color:#fff;
 }
@@ -235,7 +282,10 @@ main #process .contents_wrap .btm .arrow {transform:translateY(-20px)}
 main #qna {}
 main #qna .title {margin-bottom:50px;}
 main #qna .wrap {}
-main #qna .wrap dl {margin-bottom:50px;}
+main #qna .wrap dl {margin-bottom:50px; opacity:0;}
+main #qna .wrap dl:nth-child(1).active {animation:contents_ani2 1s linear forwards;}
+main #qna .wrap dl:nth-child(2).active {animation:contents_ani2 1s linear 0.5s forwards;}
+main #qna .wrap dl:nth-child(3).active {animation:contents_ani2 1s linear 1s forwards;}
 main #qna .wrap dl:last-child {margin-bottom:0;}
 main #qna .wrap dl dt {
     font-size:1.25rem; letter-spacing:-0.02em; 
@@ -243,7 +293,7 @@ main #qna .wrap dl dt {
     margin-bottom:30px;
 }
 main #qna .wrap dl dd {
-    font-size:1.25rem; letter-spacing:-0.02em;
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
 }
 /* ask */
 main #ask {
@@ -283,13 +333,13 @@ main #ask .wrap #ask_form fieldset label {
 main #ask .wrap #ask_form fieldset label #agree {
     appearance: none;
 }
-main #ask .wrap #ask_form fieldset label #agree:checked~span {background:url(../images/radio_check.png) no-repeat;}
+main #ask .wrap #ask_form fieldset label #agree:checked~span {background:url(../images/radio_check.png) no-repeat; background-position:0 70%;}
 main #ask .wrap #ask_form fieldset label span {
     background:url(../images/radio_uncheck.png) no-repeat; 
     background-position:0 70%;  
-    padding-left:30px;
+    padding-left:30px; letter-spacing:-0.06em;
 }
-main #ask .wrap #ask_form fieldset label span em {}
+main #ask .wrap #ask_form fieldset label span em {letter-spacing:-0.06em;}
 main #ask .wrap #ask_form fieldset #ask_btn {
     display:block;
     width:100%; height:54px; border-radius:30px;
@@ -324,4 +374,16 @@ footer address {
 @keyframes opacity {
     0% {opacity:0; transform:translateY(50px)}
     100% {opacity:1; transform:translateY(0)}
+}
+@keyframes title_ani {
+    0% {opacity:0; transform:translateY(50px)}
+    100% {opacity:1; transform:translateY(0)}
+}
+@keyframes contents_ani {
+    0% {opacity:0; transform:scale(0)}
+    100% {opacity:1; transform:scale(1)}
+}
+@keyframes contents_ani2 {
+    0% {opacity:0; transform:translateX(50px)}
+    100% {opacity:1; transform:translateX(0)}
 }
